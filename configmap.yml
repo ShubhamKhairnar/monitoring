@@ -124,7 +124,7 @@ data:
 
       - job_name: 'databse-exporter'
         static_configs:
-          - targets: ['10.0.1.108:9104']
+          - targets: ['<YOUR-URL>:9104']
 
       - job_name: 'kubernetes-cadvisor'
 
@@ -197,12 +197,12 @@ data:
     receivers:
     - name: 'email'
       email_configs:
-      - to: 'shubhamkhairnar123@gmail.com'
-        from: 'shubhamkhairnar123@gmail.com'
+      - to: 'mail@gmail.com'
+        from: 'mail@gmail.com'
         smarthost: smtp.gmail.com:587
-        auth_username: 'shubhamkhairnar123@gmail.com'
-        auth_identity: 'shubhamkhairnar123@gmail.com'
-        auth_password: '9764342364@shk'
+        auth_username: 'mail@gmail.com'
+        auth_identity: 'mail@gmail.com'
+        auth_password: 'password'
     inhibit_rules:
       - source_match:
           severity: 'page'
